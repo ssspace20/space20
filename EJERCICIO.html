@@ -1,0 +1,133 @@
+<! DOCTYPE HTML>
+<HTML lang=“es”>
+<HEAD> 
+<TITLE> EJERCICIO </TITLE> 
+<META HTTP-EQUIV="Refresh" CONTENT="10"> 
+</HEAD>
+<BODY> 
+Hola mundo
+    <br> 
+<b>Hola mundo</b>
+    <br> 
+<i>Hola mundo</i>
+<br>
+<FONT size=12> Hola mundo </FONT>
+    <br>
+    <FONT size=12> <b> Hola mundo </b> </FONT>
+    <br>
+    <FONT size=12> <i> Hola mundo </i> </FONT>
+    <br>
+    <FONT size=14; color= "00ced1" face= "garamond"> Hola mundo</FONT>
+    <br>
+     <FONT size=14; color= "006400" face= "garamond"> <b>Hola mundo</b></FONT>
+    <br>
+    <FONT size=14; color= "ff00ff" face= "garamond"><b><i>HOLA MUNDO</i></b></FONT>
+    <br>
+    <br>
+    
+<h1> ARTISTAS FAVORITOS: LOLE Y MANUEL</h1>
+<p class="centrado"> Lole y Manuel fueron un dúo musical y matrimonio gitano, formado por Dolores Montoya y Manuel Molina, fundamental en la renovación del flamenco español desde 1972. Pioneros del "nuevo flamenco", fusionaron la tradición con influencias hippies, jazz y toques árabes, lanzando álbumes icónicos como Nuevo Día (1975). El flamenco es el estilo musical español más conocido en el mundo entero y, sin temor a equivocarnos, podemos afirmar que es uno de los símbolos más reconocibles y reconocidos de este país. Como suele ocurrir en cualquier tipo de música, tiene en su país de origen a sus más férreos defensores del llamado purismo, y que ven con malos ojos cualquier intento de innovación o renovación del estilo. Sus luces rojas se encendieron a mediados de los 70 por culpa de la irrupción de este dúo que dio un aire fresco y de renovación al estilo, siendo precursores del llamado nuevo flamenco. Las causas de este cambio son las mismas que las de cualquier músico, en las influencias recibidas durante la juventud. «Está claro que yo no toco la guitarra como lo hace mi padre, ni Lole canta como lo hace su madre. Nuestros padres no oyeron a Janis Joplin ni a Jimi Hendrix, tampoco escucharon la música de los Beatles. Nuestro cambio está, sobre todo, en el ritmo… hemos renovado nuestra propia música, hemos intentado descubrirnos a nosotros mismos» (Manuel Molina).</p>
+
+<A href= "https://youtu.be/uSPTuRxmwjc?si=XLi1roqgvt-qvGdx" target="_blank">LOLE Y MANUEL (1975) "NUEVO DÍA"</A> 
+<br> <br>
+
+<A href="https://youtu.be/uSPTuRxmwjc?si=XLi1roqgvt-qvGdx"><IMG src="Loleymanuel.jpg"></A>
+<br> <br> <br> <br>
+    <IMG src="bailarina.jpg" WIDTH="700"; HEIGH="1000"> </IMG>
+<br> <br> <br>
+    <TABLE border="4" width="800"> 
+    <TR> <TD width="200" align="center"> Nuevo Día (1975) </TD> <TD width="200" align="center"> Una voz y una guitarra (1995)</TD></TR>
+    <TR> <TD width="200" align="center"> Romero Verde (2000)</TD> <TD width="200" align="center"> Casta (2019)</TD></TR> </TABLE>
+<br> <br> <br> <br> <br>
+<B> <I> <FONT size="18" color="a52a2a" face="Garamond"> GRUPOS DE MÚSICA </FONT> </B> </I>
+<TABLE border="2"  width="90%">
+<tr> <td width=30%>     <IMG src="hqdefault.jpg"> </td> <td width=30%> 
+    <IMG src="manonegra.jpg"> </td> <td width=30%> <IMG src="supernatural.jpg"> </td>
+<br> <br> <br>
+    
+<script>
+alert("¿te gusta esta página o te da mala espina?");
+</script>
+<br> <br>
+
+<BUTTON onclick="mensaje()" type="button">Selecciona tu canción favorita</BUTTON>
+<script>
+function mensaje()
+{
+alert("Corazón Espinado");
+}
+</script>
+
+<br> <br> <br>
+    
+<BUTTON onclick="suma(23,758)" type="button"> ¿23 + 758?</BUTTON>
+<script>
+function suma(a,b)
+{
+sum=a+b
+alert("suma="+sum);
+}
+</script>
+
+<br> <br> <br>
+    
+<form action="" name="formulario" onsubmit="leernumeros(); return false">
+  <input type="text" size="4" value="1" name="numero1">
+  <input type="text" size="4" value="1" name="numero2">
+  <input type="submit" value="Sumar dos números">     
+</form>
+
+<script>
+function leernumeros() {
+
+    
+    let n1 = Number(document.forms["formulario"]["numero1"].value);
+    let n2 = Number(document.forms["formulario"]["numero2"].value);
+
+
+    let resultado = n1 + n2;
+
+    
+    alert("Resultado: " + resultado);
+}
+</script>
+  
+ <br> <br> <br>
+    
+<form name="ejemplo" onsubmit="leer(); return false">
+  <input type="text" size="4" value="0" name="numero1">
+  <input type="submit" value="Latas atún enviar a cesta">
+</form>
+
+<form name="ejemplo2" onsubmit="leer2(); return false">
+  <input type="text" size="4" value="0" name="numero1">
+  <input type="submit" value="Latas pollo enviar a cesta">
+</form>
+
+<script>
+function leer() {
+    var precio = 2.13 * document.forms["ejemplo"]["numero1"].value;
+    alert("Cesta: " + precio);
+}
+
+function leer2() {
+    var precio = 1.15 * document.forms["ejemplo2"]["numero1"].value;
+    alert("Cesta: " + precio);
+}
+</script> 
+
+<br> <br> <br> 
+
+<script>
+function leernumeros()
+{
+ sumar(formulario.numero1.value,formulario.numero2.value);
+}
+function sumar(a,b)
+{var sum=Number(a)+Number(b);
+ alert(sum);
+}
+    
+</script>
+</BODY>
+</HTML>
